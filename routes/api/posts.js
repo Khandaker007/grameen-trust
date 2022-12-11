@@ -100,7 +100,6 @@ router.delete("/:id", auth, async (req, res) => {
 
     res.status(500).send("Server Error");
   }
-  const post = await Post.findById(req.params.id);
 });
 
 module.exports = router;
