@@ -48,6 +48,7 @@ export const Login = () => {
             value={email}
             onChange={(e) => onChange(e)}
             autoComplete="username"
+            required
           />
         </div>
         <div className="form-group">
@@ -59,6 +60,7 @@ export const Login = () => {
             onChange={(e) => onChange(e)}
             autoComplete="new-password"
             minLength="6"
+            required
           />
         </div>
         <input type="submit" className="btn btn-primary" value="Login" />
