@@ -15,16 +15,16 @@ function App() {
     <Router>
       <Fragment>
         <Navbar />
-        <Landing />
+        {/* <Landing /> */}
         <Routes>
-          <Route exact path="/" component={<Landing />} />
           {/* </Routes> */}
-          {/* <div className="container"> */}
-          {/* <Routes> */}
-          <Route exact path="/register" component={<Register />} />
-          <Route exact path="/register" component={<Login />} />
+          <Fragment>
+            <Route path="/" element={<Landing />} />
+            {/* <Routes> */}
+            <Route path="/register" element={<Register />} />
+            <Route path="/login" element={<Login />} />
+          </Fragment>
         </Routes>
-        {/* </div> */}
       </Fragment>
     </Router>
   );
